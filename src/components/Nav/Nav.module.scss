@@ -1,0 +1,36 @@
+.nav {
+ grid-area: nav;
+ color: #fff;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ padding: 10px;
+
+ .item {
+  color: red;
+ }
+
+ a {
+  display: block;
+  color: #618bc1;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  line-height: 1;
+  text-transform: uppercase;
+
+  &:hover {
+   color: #065dcd;
+  }
+
+  &.active {
+   color: #065dcd;
+  }
+ }
+}
+
+@media screen and (max-width: 992px) {
+ .nav {
+  flex-direction: row;
+ }
+}

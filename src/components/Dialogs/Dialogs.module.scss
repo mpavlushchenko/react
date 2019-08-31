@@ -1,0 +1,41 @@
+.dialogs{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    .items{
+        padding: 6px;
+        &.active{
+            color: #ff0000;
+        }
+        .dialog{
+            padding: 8px 0;
+        }
+        a{
+            list-style-type: none;
+            color: black;
+            text-decoration: none;
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+    }
+    .massages{
+        padding: 6px;
+        .massage{
+            padding: 8px 0;
+            color: #344aae;
+        }
+    }
+    .inner-text{
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+        textarea{
+            width: 100%;
+            min-height: 20px;
+        }
+        .btn{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+} 

@@ -1,0 +1,22 @@
+.about {
+    display: flex;
+    margin: 30px 0;
+
+    .image {
+        max-width: 150px;
+        width: 100%;
+        margin-right: 30px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background-color: #fff;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.head-image {
+    display: block;
+    margin: 0 -20px;
+}

@@ -1,0 +1,38 @@
+.home{
+ color: #836666;
+ .video{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  transform: translate(0%, -50%);
+  background-color: black;
+  transition: 1s opacity;
+ }
+ .content{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  p{
+   display: block;
+   font-size: 54px;
+   font-family: 'Shadows Into Light', cursive;
+   text-transform: uppercase;
+   letter-spacing: 14px;
+   margin: 0;
+  }
+ }
+ iframe{
+  width: 100%;
+ }
+}
+.ytp-chrome-top{
+ display: none;
+}
