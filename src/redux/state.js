@@ -6,7 +6,8 @@ let state = {
             {id: 1, text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', likesCount: 12},
             {id: 2, text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore', likesCount: 1},
             {id: 3, text: 'Excepteur sint occaecat cupidatat non proident', likesCount: 11}
-        ]
+        ],
+        newPostText: "ldldldldldlddl !!!"
     },
     dialogsPage: {
         dialogs: [
@@ -34,6 +35,11 @@ export let addPost = (postMessage) => {
         likesCount: 0
     };
     state.profilePage.posts.push(newPost);
+    rerender(state);
+};
+
+export let updatePost = (newText) => {
+    state.profilePage.newPostText = newText;
     rerender(state);
 };
 
