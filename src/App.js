@@ -12,8 +12,9 @@ import Home from "./components/Home/Home";
 
 const App = (props) => {
 	return (
-        <div className="wrapper">
+        <div>
             <Header />
+            <div className="wrapper">
             <Navbar />
             <div className="app-wrapper-content">
                 <Route exact path="/" component={Home} />
@@ -26,6 +27,7 @@ const App = (props) => {
                 <Route path="/news" render={() => <News />} />
                 <Route path="/music" render={() => <Music />} />
             </div>
+        </div>
         </div>
 	);
 };

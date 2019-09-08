@@ -12,12 +12,12 @@ import {BrowserRouter} from "react-router-dom";
 let rerender = (state) => {
     ReactDOM.render(
         <BrowserRouter>
-            <App state={store.getState()} addPost={store.addPost} updatePost={store.updatePost}/>
+            <App state={state} addPost={store.addPost.bind(store)} updatePost={store.updatePost.bind(store)}/>
         </BrowserRouter>, document.getElementById('root'));
 };
 rerender(store.getState());
 
-store.subscribe(rerender); 
+store.subscribe(rerender);
 
 // If you want your app to work offline and load faster, yo u can change
 // unregister() to register() below. Note this comes with some pitfalls.

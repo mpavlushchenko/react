@@ -26,14 +26,13 @@ let store = {
         },
         sidebar: {}
     },
-    getState() {
-        return this._state;
-    },
     _callSubscriber () {
         console.log('state');
     },
+    getState() {
+        return this._state;
+    },
     addPost () {
-        debugger;
         let newPost = {
             id: 5,
             text: this._state.profilePage.newPostText,
