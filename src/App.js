@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 import Header from './components/Header/Header';
 import Navbar from './components/Nav/Nav';
@@ -20,10 +20,9 @@ const App = (props) => {
                 <Route exact path="/" component={Home} />
                 <Route path="/content" render={() => <Content
                     profilePage={props.state.profilePage}
-                    addPost={props.addPost}
-                    updatePost={props.updatePost}
+                    dispatch={props.dispatch}
                 />} />
-                <Route path="/dialogs" render={() => <Dialogs dialogs={props.state.dialogsPage.dialogs} messages={props.state.dialogsPage.messages} />} />
+                <Route path="/dialogs" render={() => <Dialogs store={props.store} />} />
                 <Route path="/news" render={() => <News />} />
                 <Route path="/music" render={() => <Music />} />
             </div>

@@ -9,6 +9,8 @@ const News = () => {
             <div className={style.item3}>3</div>
             <div className={style.item4}>4</div>
             <div className={style.item5}>5</div>
+            <div className={style.item6}>6</div>
+
         </div>
     )
 }
