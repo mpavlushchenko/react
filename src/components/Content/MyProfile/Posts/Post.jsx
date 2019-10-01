@@ -4,7 +4,7 @@ import style from './Post.module.scss';
 const Post = (props) => {
 
   return (
-    <div>
+    <div id={props.id}>
       <div className={style.item}>
         <div className={style.avatar}>
 

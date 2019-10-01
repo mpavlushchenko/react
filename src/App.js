@@ -16,14 +16,14 @@ const App = (props) => {
             <Header />
             <div className="wrapper">
             <Navbar />
-            <div className="app-wrapper-content">
-                <Route exact path="/" component={Home} />
-                <Route path="/content" render={() => <Content store={props.store} />} />
-                <Route path="/dialogs" render={() => <DialogsContainer store={props.store} />} />
-                <Route path="/news" render={() => <News />} />
-                <Route path="/music" render={() => <Music />} />
+                <div className="app-wrapper-content">
+                    <Route exact path="/" component={Home} />
+                    <Route path="/content" render={() => <Content store={props.store} />} />
+                    <Route path="/dialogs" render={() => <DialogsContainer store={props.store} />} />
+                    <Route path="/news" render={() => <News />} />
+                    <Route path="/music" render={() => <Music />} />
+                </div>
             </div>
-        </div>
         </div>
 	);
 };

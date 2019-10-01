@@ -1,8 +1,5 @@
 import React from 'react';
-import style from './Dialogs.module.scss';
 
-import DialogItem from './DialogsItem/DialogItem';
-import DialogMassage from './Message/Message';
 import { updateNewMessageCreator, sendMessageCreator } from '../../redux/dialogs-reducer';
 import Dialogs from './Dialogs';
 

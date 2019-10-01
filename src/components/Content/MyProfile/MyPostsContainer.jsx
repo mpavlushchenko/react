@@ -15,7 +15,7 @@ const MyPostsContainer = (props) => {
   };
 
   return (<MyPosts updateNewPostText={onPostChange} 
-                   addPost={addPost} 
+                   addPost={addPost}
                    posts={state.profilePage.posts} 
                    newPostText={state.profilePage.newPostText} />) 
 };
