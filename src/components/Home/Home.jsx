@@ -1,29 +1,20 @@
-import React, {Component} from 'react';
+import React from 'react';
 import style from './Home.module.scss';
 
-class Home extends Component {
-    constructor (props) {
-        super(props);
+const Home = () => {
+    let videoURL =  'http://thenewcode.com/assets/videos/polina.mp4'
 
-        this.state = {
-            videoURL: 'http://thenewcode.com/assets/videos/polina.mp4'
-        }
-    }
-
-    render () {
-        return (
-            <div className={style.home}>
-                <video className={style.video} loop autoPlay>
-                    <source src={this.state.videoURL} type="video/mp4" />
-                    <source src={this.state.videoURL} type="video/ogg" />
-                    Your browser does not support the video tag.
+    return (
+        <div className={style.home}>
+                <video className={style.video} autoPlay>
+                    <track src={videoURL} kind="captions" type="video/mp4" />
+                    <track src={videoURL} kind="captions" type="video/ogg" />
                 </video>
                 <div className={style.content}>
                     <p>peaky blinders</p>
                 </div>
-            </div>
-        )
-    }
+            </div> 
+    )
 }
 
 export default Home;
